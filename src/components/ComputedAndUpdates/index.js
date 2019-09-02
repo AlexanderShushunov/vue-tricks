@@ -1,3 +1,1 @@
-export {default as ComputedAndUpdatesChild} from './ComputedAndUpdatesChild';
-export {default as ChangeComputedUpdateItself} from './ChangeComputedUpdateItself';
-export {default as ComputedAndUpdatesChangeComputedDirectly} from './ComputedAndUpdatesChangeComputedDirectly';
+export {default as ComputedAndUpdates} from './ComputedAndUpdates';

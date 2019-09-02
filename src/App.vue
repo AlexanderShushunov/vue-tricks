@@ -1,28 +1,16 @@
 <template>
   <div id="app">
-    <AddToData />
-    <ComputedAndUpdatesChild />
-    <ChangeComputedUpdateItself />
-    <ComputedAndUpdatesChangeComputedDirectly />
+    <div class="menu">
+      <router-link to="/ComputedAndUpdates">ComputedAndUpdates</router-link>
+      <router-link to="/AddToData">AddToData</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script>
-  import AddToData from './components/AddToData';
-  import {
-    ChangeComputedUpdateItself,
-    ComputedAndUpdatesChild,
-    ComputedAndUpdatesChangeComputedDirectly
-  } from './components/ComputedAndUpdates';
-
   export default {
-    name: 'app',
-    components: {
-      AddToData,
-      ComputedAndUpdatesChild,
-      ChangeComputedUpdateItself,
-      ComputedAndUpdatesChangeComputedDirectly
-    }
+    name: 'App'
   };
 </script>
 
@@ -34,5 +22,9 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
   }
 </style>
