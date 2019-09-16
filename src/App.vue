@@ -4,6 +4,7 @@
       <router-link to="/ComputedAndUpdates">ComputedAndUpdates</router-link>
       <router-link to="/AddToData">AddToData</router-link>
       <router-link to="/UseFunctionalGetters">UseFunctionalGetters</router-link>
+      <router-link to="/TransitionAndDestroy">TransitionAndDestroy</router-link>
     </div>
     <router-view />
   </div>
