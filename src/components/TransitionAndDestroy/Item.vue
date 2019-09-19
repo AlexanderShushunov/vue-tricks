@@ -17,7 +17,6 @@
 
       const transitionDuration = parseFloat(getComputedStyle(this.$el).transitionDuration);
       this.log(`before destroy (transitionDuration = ${transitionDuration})`);
-      console.log(this)
       if (transitionDuration > 0) {
         this.$el.addEventListener('transitionend', waiter);
       } else {

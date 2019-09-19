@@ -6,6 +6,7 @@ import {ComputedAndUpdates} from './components/ComputedAndUpdates';
 import AddToData from './components/AddToData';
 import {UseFunctionalGetters} from './components/UseFunctionalGetters';
 import {TransitionAndDestroy} from './components/TransitionAndDestroy';
+import {ComponentVsClass} from './components/ComponentVsClass';
 
 Vue.config.productionTip = false;
 
@@ -15,7 +16,8 @@ const routes = [
   {path: '/ComputedAndUpdates', component: ComputedAndUpdates},
   {path: '/AddToData', component: AddToData},
   {path: '/UseFunctionalGetters', component: UseFunctionalGetters},
-  {path: '/TransitionAndDestroy', component: TransitionAndDestroy}
+  {path: '/TransitionAndDestroy', component: TransitionAndDestroy},
+  {path: '/ComponentVsClass', component: ComponentVsClass}
 ];
 
 const router = new VueRouter({
