@@ -8,7 +8,10 @@
     <br />
     totalTime: {{ totalTime }}
     <div :key="fullRepaint ? count : 'key'">
-      <slot v-bind:propeller="propeller" />
+      <slot
+          v-bind:propeller="propeller"
+          v-bind:color="color"
+      />
     </div>
   </div>
 </template>
@@ -33,6 +36,9 @@
     computed: {
       propeller() {
         return propellerPositions[this.count % propellerPositions.length];
+      },
+      color () {
+        return `rgb(${this.count % 256}, ${(this.count + 86) % 256}, ${(this.count + 171) % 256})`
       }
     },
     beforeCreate() {

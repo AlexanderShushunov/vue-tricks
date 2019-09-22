@@ -4,16 +4,20 @@
     <RunnerSet full-repaint />
     <h1>Smart update repaint</h1>
     <RunnerSet />
+    <h1>Buttons do not depend on props (child component splitting)</h1>
+    <IndependentChildRunnerSet />
   </div>
 </template>
 
 <script>
   import RunnerSet from './RunnerSet';
+  import IndependentChildRunnerSet from './IndependentChildRunnerSet';
 
   export default {
     name: 'ComponentVsClass',
     components: {
-      RunnerSet
+      RunnerSet,
+      IndependentChildRunnerSet
     }
   };
 </script>
